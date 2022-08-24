@@ -1,0 +1,33 @@
+.sidebar{
+    color: #353b48;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f6fa;
+}
+.logo{
+    padding-top: 10px;
+}
+.sidebar img{
+    width: 50px;
+    height: 50px;
+}
+.sidebar li{
+    list-style: none;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.person{
+    color: #4cd137;
+}
+.more{
+    color: #4cd137;
+}
+
+.side-footer{
+    margin-top: 140px;
+    padding-bottom:10px ;
+}
