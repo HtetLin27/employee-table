@@ -33,8 +33,8 @@ function Sidebar() {
         <li><CreditCardIcon/></li>
         <li><SmsOutlinedIcon/></li>
         <li>
-            <span className='more'><MoreHorizOutlinedIcon/></span>
-                <p> More</p>
+            <span className='more-icon'><MoreHorizOutlinedIcon/></span>
+                <p className='more'>More</p>
             
         </li>
         <div className='side-footer'>

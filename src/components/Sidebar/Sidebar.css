@@ -1,17 +1,17 @@
 .sidebar{
     color: #353b48;
-    flex: 1;
     display: flex;
+    flex:1;
     flex-direction: column;
     justify-content: center;
     background-color: #f5f6fa;
+    align-items: center;
 }
-.logo{
-    padding-top: 10px;
-}
+
 .sidebar img{
     width: 50px;
     height: 50px;
+    object-fit:fill;
 }
 .sidebar li{
     list-style: none;
@@ -19,15 +19,22 @@
     cursor: pointer;
     margin-top: 10px;
 }
-
+.logo{
+    padding: 5px;
+}
 .person{
     color: #4cd137;
 }
-.more{
+.more-icon{
     color: #4cd137;
 }
 
 .side-footer{
     margin-top: 140px;
     padding-bottom:10px ;
+}
+.more{
+    position: relative;
+    top:-10px;
+    left: -3px;
 }

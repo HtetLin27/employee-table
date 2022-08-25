@@ -1,0 +1,59 @@
+.userListUser{
+    display: flex;
+    align-items: center;
+}
+
+.userListImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.employee-table{
+    display: flex;
+    flex: 25;
+    flex-direction: column;
+   
+}
+.table-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.employee-dir{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.employee-dir p{
+    font-family: sans-serif;
+    margin-right: 50px;
+   
+}
+.create-employee{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.arrow-icon{
+    color: #4cd137;
+    margin-right: 15px;
+}
+.filter-icon{
+    margin-right: 25px;
+}
+.create-employee button{
+    background-color:#27ae60;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    border-color: #27ae60;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.morever-icon{
+    margin-right: 50px;
+}
