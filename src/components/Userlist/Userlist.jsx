@@ -1,7 +1,7 @@
 import React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 import './Userlist.css'
-import Departments from '../Departments';
+import Departments from '../Department/Departments';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import SearchIcon from '@material-ui/icons/Search';
@@ -13,7 +13,6 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 function Userlist() {
 
     const columns = [
-    // { field: 'id', headerName: 'Employee', width: 200 },
     { field: 'employee', headerName: 'Employee', width: 200 ,
       renderCell:(params)=>{
         return(
@@ -39,7 +38,6 @@ function Userlist() {
     {
       field: 'phone',
       headerName: 'Phone',
-      // type: 'number',
       width: 150,
       editable: true,
     },
@@ -47,7 +45,14 @@ function Userlist() {
     {
       field:'department',
       headerName:'Department',
-      width:200
+      width:200,
+      renderCell:(params)=>{
+        return(
+          <div className='departmentList'>
+            {params.row.department}
+          </div>
+        )
+      }
     },
     {
       field:'employeecode',
@@ -68,7 +73,7 @@ function Userlist() {
       email: 'kyisintar@better.hr', 
       location : 'Yangon office',
       phone: "+959483482381" ,
-      department : 'Customer success',
+      department : <Departments depName ="Product"/>,
       employeecode: '004-342',
       customtag:'Intern'
       },
@@ -78,7 +83,8 @@ function Userlist() {
       email: 'yeminhtun@better.hr',
       location: 'Yangon office', 
       phone: "+959483485392",
-      department : 'Tech & Development',
+      // department : 'Tech & Development',
+      department : <Departments depName ="Tech & Development"/>,
       employeecode: '004-342',
       customtag:'Trainee'
      },
@@ -88,7 +94,7 @@ function Userlist() {
       email: 'eric@better.hr', 
       location: 'Yangon office Sue Lay',
       phone: "+959983496387",
-      department : 'Developement',
+      department : <Departments depName ="Development"/>,
       employeecode: '004-342',
       customtag:'Intern'
      },
@@ -98,7 +104,7 @@ function Userlist() {
       email: 'biden@better.hr', 
       location: 'Yangon office',
       phone: "+959783482396",
-      department : 'Product',
+      department : <Departments depName ="Product"/>,
       employeecode: '004-342',
       customtag:'Trainee'
      },
@@ -108,7 +114,7 @@ function Userlist() {
       email: 'mike@better.hr', 
       location: 'Yangon office', 
       phone: "+959483402379" ,
-      department : 'Human resource managing department',
+      department : <Departments depName ="Tech & Development"/>,
       employeecode: '004-342',
       customtag:'Intern'
     },
@@ -118,7 +124,7 @@ function Userlist() {
       email: 'Devi@better.hr', 
       location: 'Yangon office Sue Lay', 
       phone: "+959483489385",
-      department : 'Marketing Myanmar department', 
+      department : <Departments depName ="Marketing Myanmar"/>,
       employeecode: '004-342',
       customtag:'Spannish-spoken'
     },
@@ -128,7 +134,7 @@ function Userlist() {
       email: 'johnathan@better.hr', 
       location: 'Mandalay office', 
       phone: "+959483432396" ,
-      department : 'Product',
+      department : <Departments depName ="Tech & Development"/>,
       employeecode: '004-342',
       customtag:'Intern'
     },
@@ -138,7 +144,7 @@ function Userlist() {
       email: 'walter@better.hr', 
       location: 'Yangon office',
       phone: "+959883482383" ,
-      department : 'Marketing Srilanka department',
+      department : <Departments depName ="Development"/>,
       employeecode: '004-342',
       customtag:'Trainee'
     },
@@ -149,7 +155,7 @@ function Userlist() {
       location: 'Yangon office', 
       phone: "+959483382353" ,
       department : 'Product',
-      department : 'Human resource managing department',
+      department : <Departments depName ="Customer success"/>,
       employeecode: '004-342',
       customtag:'Spannish-spoken'
     },
@@ -159,7 +165,7 @@ function Userlist() {
       email: 'elanor@better.hr', 
       location: 'Yangon office', 
       phone: "+959483582318" ,
-      department : 'Developement',
+      department : <Departments depName ="Development"/>,
       employeecode: '004-342',
       customtag:'Trainee'
     },
@@ -169,7 +175,7 @@ function Userlist() {
       email: 'wilson@better.hr', 
       location: 'Yangon office Sue Lay',
       phone: "+959482422376" ,
-      department : 'Tech & Development',
+      department : <Departments depName ="Tech & Development"/>,
       employeecode: '004-342',
       customtag:'Intern'
     },
